@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#inpt{
+    margin-bottom: 10px;
+}
+.todo {
+    width: 100%;
+    height: 2.5rem;
+    background-color: rgb(229, 247, 229);
+    margin: 2px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 2px;
+}
+
+.container{
+    margin: auto;
+    width: 20rem;
+    height: 100vh;
+    background-color: rgb(107, 177, 239);
+    text-align: center;
+    padding-top: 2vh;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+strong {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    color: black;
+    cursor: pointer;
+    background-color: rgb(237, 118, 118);
+    border-radius: 10px;
+    font-size: 14px;
+    padding-top: 4px;
+    padding-left: 1.3px;
+    box-shadow: 2px 2px rgb(227, 227, 227);
+}
+strong::after { 
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 2px;
+    background-color: black;
+    rotate: 45deg;
+    margin-left: -10px;
+    margin-top: 5px;
+}
+
+
+strong::before { 
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 2px;
+    background-color: black;
+    rotate: -45deg;
+    margin-left: -10px;
+    margin-top: 5px;
+}
+
+strong:hover { 
+    background-color: red;
+    box-shadow: 0;
+}
